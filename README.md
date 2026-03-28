@@ -1,16 +1,37 @@
-# tp
+# User Management App
 
-A new Flutter project.
+A simple Flutter application demonstrating how to integrate local database storage using SQLite (`sqflite`).
+
+## Features
+
+- **Local Database:** Uses `sqflite` to store user data locally on the device.
+- **CRUD Operations:** Implements Create, Read, Update, and Delete operations for user management.
+- **Pre-populated Data:** Automatically seeds the database with sample users (John, Jane, Alice, Bob) on first launch.
+- **Clean Architecture:** Separates the data model (`User.dart`), database logic (`DatabaseHelper.dart`), and UI (`main.dart`).
+
+## Project Structure
+
+- `lib/main.dart`: The entry point of the application and the main UI (User List).
+- `lib/User.dart`: The data model representing a user.
+- `lib/DatabaseHelper.dart`: A singleton class that manages the SQLite database connection and queries.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run this project locally, ensure you have Flutter installed.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/charaf12-u/User-Management-app.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd User-Management-app
+   ```
+3. Get the dependencies:
+   ```bash
+   flutter pub get
+   ```
+4. Run the app:
+   ```bash
+   flutter run
+   ```
